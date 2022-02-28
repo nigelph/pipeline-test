@@ -1,15 +1,10 @@
 version: 2.10
 
 jobs:
-  run_tests:
-    docker:
-      - image: cicleci/node:10
-    steps:
-      - checkout
-      - run:
-        name: Install npm dependencies
-        command: |
-          npm install --save
-      - run:
-        name: Run unit tests
-        command:
+  docker:
+    - image: cicleci/node:16.13.2
+
+  steps:
+    - checkout
+    - run: npm install
+    - run: npm test
