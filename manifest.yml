@@ -1,6 +1,6 @@
  applications:
  - name: pipeline-tests
-     path: ./dist
+     path: ../pipeline
      buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
      random-route: true
      memory: 256M
