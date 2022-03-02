@@ -12,7 +12,7 @@ describe('adding numbers together', function () {
     it('220 + 230 should be equal to 450', () => {
         const inputOne = 220
         const inputTwo = 230
-        const expected = 500
+        const expected = inputOne + inputTwo
         const actual = sum(inputOne, inputTwo)
         expect(actual).toBe(expected)
     })
